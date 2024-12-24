@@ -9,7 +9,8 @@
     "dev:client": "vite",
     "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "concurrently \"npm:preview:*\"",
-    "preview:client": "vite preview"
+    "preview:client": "vite preview",
+    "start": "vite preview"
   },
   "author": "Lakshay Yadav",
   "license": "GPL-1.0",

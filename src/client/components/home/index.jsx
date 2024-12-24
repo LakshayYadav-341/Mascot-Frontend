@@ -24,10 +24,8 @@ const HomeComponent = ({ role, user, connection, users, posts }) => {
     const [tempPosts, setTempPosts] = useState([])
     const [isPostChanged, setIsPostChanged] = useState(false)
     const [isLoading, setIsLoading] = useState(true);
-    // const tempUser = useSelector(selectLoggedInUser);
     const profileUrl = basePath + urls.user.profile.get.replace(':id', session?.user)
     const { data: tempUser, mutate: tempUserMutate,} = useGetter(profileUrl)
-    const tempUser2 = useSelector(selectUserInfo)
     const { data: newsData, mutate: newsMutate, isLoading: newsLoading } = useGetter(newsGetUrl)
     const { data: connectedUser, mutate: connectionMutate, isLoading: connectionIsLoading } = useGetter(connectionsUrl)
 
